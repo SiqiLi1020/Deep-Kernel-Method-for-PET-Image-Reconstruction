@@ -1,6 +1,5 @@
 # Deep-Kernel-Method-for-PET-Image-Reconstruction
 
-
 This is a package showing how to train a deep kernel model and test it on dynamic PET reconstruction. The method is described in:
 
 S. Q.  Li, and G. B. Wang, Deep Kernel Representation for Image Reconstruction in PET. 
@@ -10,14 +9,15 @@ Programer: Siqi Li
 
 Last updated date: 6/13/2022
 
-Prerequistites:
+# Prerequistites
 	Python 3.7 (or 3.x)
 	PyTorch
 	Matlab R2021a
 
+# Overview
 Note that, the current deep kernel is a single-subject learning method. The training and testing projection data must be same!
 
-1. Deep kernel training:
+# Deep kernel training
 
 a). 	You can re-train the deep kernel model to obtain the kernel matrix by running Train_deel_kernel.py
 	An initial model is stored in 'initialization model' folder.
@@ -27,7 +27,7 @@ a). 	You can re-train the deep kernel model to obtain the kernel matrix by runni
 b).	The training data is stored in 'training data' folder, including composite prior images (CIP), 
 	corrupted CIP as noise image, and pre-defined neighbor index.
 
-2. Kernelized EM for PET reconstruction:
+# Kernelized EM for PET reconstruction
 
 a).	To use this package, you need to add the KER_v0.2 package into your matlab path by
   	running setup.m in matlab. KER_v0.2 package can be downloaded from:
@@ -44,7 +44,7 @@ c).	We used our trained deep kernel model to generate a kernel matrix in demo an
 	conventional kernel method. The example result is stored in 'fig' folder. 
 	Please load your trained pairwise weight to generate the kernel matrix in the line 141 in demo_Deep_Kernel.m for testing if you are interesting.
 
-
+# License
 This package is the proprietary property of The Regents of the University of California.
  
 Copyright © 2019 The Regents of the University of California, Davis. 
@@ -68,6 +68,5 @@ WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEM
 THE SOFTWARE PROVIDED HEREUNDER IS ON AN "AS IS" BASIS, AND THE REGENTS HAS NO 
 OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS. 
 
-
-
+# Contact
 Please feel free to contact me (Siqi Li) if you have any questions: sqlli@ucdavis.edu
